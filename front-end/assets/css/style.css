@@ -25,7 +25,9 @@ a:hover {
 
 ul {
   margin-bottom: 0;
-  padding-left: 0; }
+  padding-left: 0; 
+  
+  }
 
 a:hover,
 a:focus,
@@ -83,7 +85,7 @@ strong {
   font-family: "mouse-500", Arial, Helvetica, sans-serif; }
 
 body {
-  background-color: #f0f4f9 !important;
+  background-color: #fff !important;
   font-family: "mouse-300", Arial, Helvetica, sans-serif;
   color: #43597a; }
 
@@ -203,7 +205,7 @@ body {
 
 .container {
  
-  max-width: 1100px; }
+  max-width: 1500px; }
   @media screen and (max-width: 575px) {
     .container {
       padding: 10px 15px; 
@@ -272,16 +274,17 @@ header {
     align-items: center;
     list-style: none;
     position: relative;
-    background-color:#f0f4f9;
+    background-color:#fff;
       font-family: "mouse-500", Arial, Helvetica, sans-serif;
       font-size: 15px;
-    padding: 12px 20px;
+    padding: 0px 20px;
 }
+/*f0f4f9*/
 
-.logo img {width: 100px;}
+.logo img {width: 80px;}
 
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
+.menu { display: flex; margin-top: 30px; }
+.menu li {padding-left: 30px; position:relative; }
 .menu li a {
     display: inline-block;
     text-decoration: none;
@@ -290,7 +293,10 @@ header {
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
+   
+    padding-bottom:20px;
 }
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -301,7 +307,38 @@ header {
     background-color: #000;
     transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;   color: #43597a;}
+.menu li a:hover:after {width: 100%; }
+
+  .menu li:hover .submenu {
+            display: block;
+        }
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position submenu below the parent */
+    left: 20%;
+    background-color: #fff;
+    list-style: none;
+    margin: 0 5px  0 0;
+    width: 200px;
+    font-size: 12px;
+    padding: 5px 0 30px;
+  border-top: 1px solid #e8e8e8;
+   z-index: 1000;
+
+}
+   .submenu li {
+  padding-left:10px;
+    text-decoration: none;
+    color:#43597a;
+    text-align: left;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;}
+    
+
+
 .open-menu , .close-menu {
     position: absolute;
     color: #43597a;
@@ -318,8 +355,9 @@ header {
     top: 20px;
     right: 20px;
 }
+
 #check {display: none;}
-@media(max-width: 610px){
+@media(max-width: 610px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -333,13 +371,48 @@ header {
         background-color: #f7f7ff;
         transition: all 0.2s ease-in-out;
     }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    .menu li .submenu {
+        position: static; /* Remove absolute positioning */
+        display: none; /* Hide by default */
+        width: 100%; /* Full width */
+        padding-left: 0; /* No padding */
+    }
+
+    .menu li:hover .submenu,
+    .menu li:focus-within .submenu {
+        display: block; /* Show submenu */
+    }
+
+    .menu li .submenu li {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
 }
 
-
+    .menu li .submenu li {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+}
 /* ===================================== Slider Style CSS ================================== */
 
 .slider {
@@ -347,7 +420,7 @@ header {
   padding-top: 122px; }
   @media screen and (max-width: 767px) {
     .slider {
-      padding-top: 71px; } }
+      padding-top: 30px; } }
   @media screen and (max-width: 450px) {
     .slider {
       padding-top: 190px; } }
@@ -467,7 +540,7 @@ font-family: Nunito,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Seg
 
 .rayane{
 
-margin:10px;
+margin:20px;
 
 }
 .popular-cources-slider .owl-nav .owl-prev, .popular-cources .owl-nav .owl-next {
@@ -482,7 +555,7 @@ margin:10px;
   border-radius: 23px;
  background: #ffffff;
   opacity: 0.8;
-  box-shadow: 2px 2px 2px 2px RGBA(206,211,213,0.47);
+  box-shadow: 0px 2px 2px 2px RGBA(206,211,213,0.47);
   filter: Alpha(Opacity=50);
   line-height: 1;
   border: 2px solid #FFF; }
@@ -490,16 +563,17 @@ margin:10px;
 .popular-cources-slider .owl-nav .owl-prev {
   position: absolute;
   top: 40%;
-  left: 15px; }
+  left: 30px; }
 
 .popular-cources-slider .owl-nav .owl-next {
   position: absolute;
   top: 40%;
-  right: 15px; }
+  right: 30px; }
 
   .popular-cources-slider {
   padding: 30px;
-  margin-top: 10px; } 
+  margin-top: 10px; 
+  margin-bottom:30px;} 
   @media screen and (max-width: 940px) {
     .popular-cources {
       padding: 30px 10px; } }
@@ -582,8 +656,34 @@ margin:10px;
           font-size: .8rem;
           color: #43cb89; } 
 
+.buttonR{
+
+position: relative;
+ padding: .3em 1em;
+border: 2px solid;
+
+  color: #fff !important;
+  border-width: 2px !important;
+  border-color: #43597a;
+  border-radius: 26px;
+  font-size: 16px;
+  padding-left: 0.7em;
+  padding-right: 2em;
+  background-color: #43597a;
+  line-height: 1.7em !important;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  
+}
+#agenda{   margin-left: 130px!important;
+           margin-top: 30px!important;
+  }
+.buttonR:hover{
 
 
+  color: #43597a!important;
+  background-color: #fff;
+}
 
 
 
