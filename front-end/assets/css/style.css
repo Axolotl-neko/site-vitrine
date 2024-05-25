@@ -228,7 +228,7 @@ header {
   z-index: 999;
   background-color: #FFF; }
   header .header-top { 
-    background-color:#145DA0; }
+    background-color:#2E8BC0; }
     header .header-top .left-item ul li {
       float: left;
       color: #FFF;
@@ -316,7 +316,7 @@ content: "";
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #00548f;
+  background-color:#2E8BC0;
  
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -804,6 +804,93 @@ border: 2px solid;
         font-size: 1rem; }
       .blog-card .setv ul li {
         font-size: 0.8rem; } }
+/* ===================================== News letter  ================================== */
+
+
+.newsLetter{
+background-color:#2E8BC0;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+width: 66.666667%;
+padding:20px;
+margin-bottom: 50px;
+border-radius: 20px;
+
+
+
+}
+.containerNewsletter{
+
+padding:60px;
+
+   display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Defines two equal columns */
+    padding: 60px;
+    grid-gap:50px;
+}
+
+.item1 {
+    grid-column: 1 / 2; /* Spans from the start of the first column to the start of the second column */
+}
+
+.item2 {
+    grid-column: 2 / 3; /* Spans from the start of the second column to the start of the third column */
+}
+         
+         
+.textInscription{
+
+font-family: "SourceSansPro-Black", Arial, Helvetica, sans-serif; 
+color:#fff;
+
+}
+
+.textInformatif{
+
+font-family: "Source Sans Pro Regular", Arial, Helvetica, sans-serif; 
+color:#fff;
+font-size: 1.25rem;
+  line-height: 1.75rem;
+
+}
+
+.formulaireNewsletter{
+border-radius: .375rem;
+padding:16px;
+border-width:1px;
+}
+
+.buttonNewsletter{ 
+  
+  padding-left: 20px;
+  padding-right: 20px; 
+  padding-bottom:12px;
+  padding-top: 12px; 
+  margin-left: 16px;
+  border-width:4px;
+  border-style: solid;
+  border-color: #fff;
+  color:#fff;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-color:#B1D4E0;
+  }
+  .buttonNewsletter:hover{
+
+
+  background-color: #2E8BC0;
+
+}
+
+
+.petittext{
+font-family: "Source Sans Pro Regular", Arial, Helvetica, sans-serif; 
+color:#fff;
+font-size:.875rem;
+
+}
+.items22{ margin-bottom:10px;}
 
 /* ===================================== Footer Cover Style  ================================== */
 .footer-ablove {
