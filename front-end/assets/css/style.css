@@ -1,11 +1,11 @@
 
 /* ===================================== Import Less ================================== */
 @font-face {
-  font-family: 'mouse-300';
-  src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype"); }
+  font-family: 'SourceSansPro-Black';
+  src: url("../fonts/SourceSansPro-Black.ttf") format("truetype"); }
 @font-face {
-  font-family: 'mouse-500';
-  src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype"); }
+  font-family: 'Source Sans Pro Semibold';
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"); }
 /* ===================================== Basic CSS ================================== */
 * {
   margin: 0px;
@@ -79,15 +79,20 @@ p {
   padding: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+  font-family: "SourceSansPro-Black", Arial, Helvetica, sans-serif;  }
+ 
+h2{
+font-size:2.5em;
+}  
 
+ 
 strong {
-  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+  font-family: "Source Sans Pro Semibold", Arial, Helvetica, sans-serif; }
 
 body {
-  background-color: #fff !important;
-  font-family: "mouse-300", Arial, Helvetica, sans-serif;
-  color: #43597a; }
+  background-color: #fcfcfc !important;
+  font-family: "Source Sans Pro Semibold", Arial, Helvetica, sans-serif;
+  color: #000; }
 
 .session-title {
   padding: 30px;
@@ -112,7 +117,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    font-family: "slab", Arial, Helvetica, sans-serif; }
+    font-family: "SourceSansPro-Black", Arial, Helvetica, sans-serif; }
   .inner-title p {
     width: 100%;
     text-align: center; }
@@ -218,12 +223,12 @@ body {
 
 header {
  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 999;
   background-color: #FFF; }
   header .header-top { 
-    background-color:#43597a; }
+    background-color:#145DA0; }
     header .header-top .left-item ul li {
       float: left;
       color: #FFF;
@@ -275,11 +280,13 @@ header {
     list-style: none;
     position: relative;
     background-color:#fff;
-      font-family: "mouse-500", Arial, Helvetica, sans-serif;
+      font-family: "Source Sans Pro Semibold", Arial, Helvetica, sans-serif;
       font-size: 15px;
     padding: 0px 20px;
+      position: fixed;
+      box-shadow: 0 0 7px rgba(0,0,0,.1) !important;
 }
-/*f0f4f9*/
+/*f0f4f9 43597a*/
 
 .logo img {width: 80px;}
 
@@ -288,29 +295,42 @@ header {
 .menu li a {
     display: inline-block;
     text-decoration: none;
-    color:#43597a;
+    color:#000;
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
    
     padding-bottom:20px;
+
+}
+.menu li a:hover {
+  color: #00548f !important; /* Change the text color when hovering */
 }
 
 .menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #000;
-    transition: 0.15s ease-in-out;
+    
+content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #00548f;
+ 
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: all .20s ease-in;
+  z-index: 1;
 }
-.menu li a:hover:after {width: 100%; }
+
+.menu li a:hover:after {width: 100%;   visibility: visible;  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
 
   .menu li:hover .submenu {
             display: block;
+           
         }
 
 .submenu {
@@ -326,12 +346,13 @@ header {
     padding: 5px 0 30px;
   border-top: 1px solid #e8e8e8;
    z-index: 1000;
+       padding-bottom:4px;
 
 }
    .submenu li {
   padding-left:10px;
     text-decoration: none;
-    color:#43597a;
+    color:#000;
     text-align: left;
     transition: 0.15s ease-in-out;
     position: relative;
@@ -341,7 +362,7 @@ header {
 
 .open-menu , .close-menu {
     position: absolute;
-    color: #43597a;
+    color: #000;
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
@@ -411,13 +432,18 @@ header {
         width: 100%;
         text-align: left;
         margin-top: 10px;
+     
     }
 }
 /* ===================================== Slider Style CSS ================================== */
 
 .slider {
   position: relative;
-  padding-top: 122px; }
+  padding-top: 122px;
+  text-align: center;
+  width: 100%; /* Ensure the slider takes the full width */
+  box-sizing: border-box;
+   }
   @media screen and (max-width: 767px) {
     .slider {
       padding-top: 30px; } }
@@ -426,9 +452,15 @@ header {
       padding-top: 190px; } }
 
 .slider-captions {
-  position: absolute;
+   position: absolute;
   bottom: 160px;
-  text-align: center; }
+  left: 50%; /* Position the left edge of the container */
+  transform: translateX(-50%); /* Move the container back by half its width to center it */
+  text-align: center;
+  width: 100%; /* Ensure the captions container spans the full width */
+  box-sizing: border-box; 
+  }
+  
   @media screen and (max-width: 1050px) {
     .slider-captions {
       bottom: 100px !important; }
@@ -447,25 +479,36 @@ header {
   font-size: 66px;
   color: #fff;
   letter-spacing: -3px;
- /*
-font-family: Nunito,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";*/
-  font-family: "mouse-300", Arial, Helvetica, sans-serif; 
+  font-family: "Source Sans Pro Semibold", Arial, Helvetica, sans-serif; 
+  text-align:center;
+  
+
    }
 
 .slider-text {
   margin-bottom: 20px;
-  color: #fff; }
+  color: #fff;
+}
 
 .slider-img {
-  background: -moz-linear-gradient(top, rgba(45, 32, 44, 0.5) 0%, rgba(45, 32, 44, 0.5) 100%);
-  background: -webkit-linear-gradient(top, rgba(45, 32, 44, 0.5) 0%, rgba(45, 32, 44, 0.5) 100%);
-  background: linear-gradient(to bottom, rgba(45, 32, 44, 0.5) 0%, rgba(45, 32, 44, 0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc1b2429', endColorstr='#cc1b2429', GradientType=0);
+ background: -moz-linear-gradient(top, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.3) 100%);
+  background: -webkit-linear-gradient(top, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.3) 100%);
+  background: linear-gradient(to bottom, rgba(45, 32, 44, 0.3) 0%, rgba(45, 32, 44, 0.3) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d20202c', endColorstr='#4d20202c', GradientType=0);
+
   position: relative; }
 
 .slider-img img {
-  position: relative;
-  z-index: -1; }
+
+  
+  
+   position: relative;
+  z-index: -1;
+  height: 800px; /* Make image height 100% of the .slider-img container */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  
+   }
 
 .slider .owl-nav .owl-prev, .slider .owl-nav .owl-next {
   color: #fff;
@@ -537,6 +580,19 @@ font-family: Nunito,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Seg
 
 /* ===================================== Actualité ================================== */
 
+
+
+
+.selectlangue{ 
+
+background-color:#fff;
+border-radius:11px;
+border: 1px #000 solid;
+padding: 5px 11px 3px 6px;
+width: 40px;
+color:#43597a;
+
+}
 
 .rayane{
 
@@ -664,24 +720,24 @@ border: 2px solid;
 
   color: #fff !important;
   border-width: 2px !important;
-  border-color: #43597a;
+  border-color: #0C2D48;
   border-radius: 26px;
   font-size: 16px;
   padding-left: 0.7em;
   padding-right: 2em;
-  background-color: #43597a;
+  background-color:#0C2D48;
   line-height: 1.7em !important;
   margin-bottom: 50px;
-  margin-left: 70px;
+    left: 50%; /* Position the left edge of the container */
+     transform: translateX(-50%); 
+ 
   
 }
-#agenda{   margin-left: 130px!important;
-           margin-top: 30px!important;
-  }
+
 .buttonR:hover{
 
 
-  color: #43597a!important;
+  color: #0C2D48 !important;
   background-color: #fff;
 }
 
@@ -694,7 +750,7 @@ border: 2px solid;
   background-attachment: fixed;
   background-size: cover; }
   .doctor-message .inner-lay {
-    background-color: #43597a;
+    background-color: #0C2D48;
     padding: 50px;
     color: #FFF; }
     @media screen and (max-width: 940px) {
@@ -752,7 +808,7 @@ border: 2px solid;
 /* ===================================== Footer Cover Style  ================================== */
 .footer-ablove {
   padding: 30px;
-  background-color:#43597a;
+  background-color:#0C2D48;
   color: #FFF;
   font-size: 1.5rem; }
   .footer-ablove .btn {
@@ -762,7 +818,7 @@ border: 2px solid;
 
 footer {
   padding: 50px;
-  background-color: #43597a;
+  background-color: #0C2D48;
   color: #FFF; }
   @media screen and (max-width: 940px) {
     footer {
