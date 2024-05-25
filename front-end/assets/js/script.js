@@ -7,6 +7,7 @@ $( document ).ready(function() {
         margin:0,
         nav:true,
         autoplay: true,
+                    animateOut: 'fadeOut', 
         dots: true,
         autoplayTimeout: 5000,
         navText:['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
@@ -102,11 +103,6 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
-
-
-
-
-
 
 
 
