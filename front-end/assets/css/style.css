@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "SourceSansPro-Black", Arial, Helvetica, sans-serif;  }
  
 h2{
-font-size:2.5em;
+font-size:3.0517578125em;
 }  
 
  
@@ -578,10 +578,33 @@ content: "";
 
 
 
+
+
+/*=======================================MOT DU RECTEUR ===============================*/
+.motdurecteur{
+
+font-family: "Source Sans Pro ", Arial, Helvetica, sans-serif;
+text-align: center;
+
+font-size:30px;
+font-weight: 300;
+
+}
+
+#a-societal-mission{ 
+
+padding:30px;
+margin-bottom:30px;
+margin-top:60px;
+}
+
 /* ===================================== Actualité ================================== */
 
 
+#actu{
 
+padding-bottom:0px;
+}
 
 .selectlangue{ 
 
@@ -599,6 +622,10 @@ color:#43597a;
 margin:20px;
 
 }
+
+
+.popular-cources{ background-color:#f4f4f4;}
+
 .popular-cources-slider .owl-nav .owl-prev, .popular-cources .owl-nav .owl-next {
   color: #c5d4ea;
   display: inline-block;
@@ -711,34 +738,38 @@ margin:20px;
           float: right;
           font-size: .8rem;
           color: #43cb89; } 
+.containerbutton{
+
+padding:12px 30px 30px 30px ;
+
+
+}
 
 .buttonR{
-
-position: relative;
- padding: .3em 1em;
-border: 2px solid;
-
-  color: #fff !important;
-  border-width: 2px !important;
-  border-color: #0C2D48;
-  border-radius: 26px;
-  font-size: 16px;
-  padding-left: 0.7em;
-  padding-right: 2em;
-  background-color:#0C2D48;
-  line-height: 1.7em !important;
+  position: relative;
+  padding: .3em 1em;
   margin-bottom: 50px;
-    left: 50%; /* Position the left edge of the container */
-     transform: translateX(-50%); 
- 
+  border:none;
+  padding:10px 22px  10px 22px ;
+  text-align: center;
+  width: 390px ;
+  height : 56px;
+  color: #fff;
+  background-color: #2E8BC0;
+  box-shadow: 0 0 10px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1);
+  font-family: "Source Sans Pro Semibold", Arial, Helvetica, sans-serif;
+  font-size:25px;
+  left: 50%;  
+  transform: translateX(-50%); 
   
+    
 }
 
 .buttonR:hover{
 
 
-  color: #0C2D48 !important;
-  background-color: #fff;
+  color: #fff !important;
+  background-color: #145DA0;
 }
 
 
@@ -750,7 +781,7 @@ border: 2px solid;
   background-attachment: fixed;
   background-size: cover; }
   .doctor-message .inner-lay {
-    background-color: #0C2D48;
+    background-color:#2E8BC0; /*#0C2D48;*/
     padding: 50px;
     color: #FFF; }
     @media screen and (max-width: 940px) {
@@ -895,7 +926,7 @@ font-size:.875rem;
 /* ===================================== Footer Cover Style  ================================== */
 .footer-ablove {
   padding: 30px;
-  background-color:#0C2D48;
+  background-color:#2E8BC0;
   color: #FFF;
   font-size: 1.5rem; }
   .footer-ablove .btn {
@@ -905,7 +936,7 @@ font-size:.875rem;
 
 footer {
   padding: 50px;
-  background-color: #0C2D48;
+  background-color: #2E8BC0;
   color: #FFF; }
   @media screen and (max-width: 940px) {
     footer {
