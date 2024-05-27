@@ -217,6 +217,19 @@ body {
     
       } }
 
+.container2 {
+  max-width: 1100px; 
+  margin:auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+  
+  }
+  @media screen and (max-width: 575px) {
+    .container2 {
+      padding: 10px 15px; } }
+.cource-det{padding:15px;}
+
 
 /* ===================================== Body CSS ================================== */
 /* ===================================== Header CSS ================================== */
@@ -591,7 +604,7 @@ font-weight: 300;
 
 }
 
-#a-societal-mission{ 
+.a-societal-mission{ 
 
 padding:30px;
 margin-bottom:30px;
@@ -745,6 +758,7 @@ padding:12px 30px 30px 30px ;
 
 }
 
+
 .buttonR{
   position: relative;
   padding: .3em 1em;
@@ -772,8 +786,7 @@ padding:12px 30px 30px 30px ;
   background-color: #145DA0;
 }
 
-
-
+#actualité{padding-top: 50px;}
 
 /* ===================================== Clinic Number Say CSS ================================== */
 .doctor-message {
@@ -1071,4 +1084,16 @@ footer {
     .contact-rooo {
       padding: 30px 10px; } }
 
-/*# sourceMappingURL=style.css.map */
+
+/* tableau styles */
+
+.tableau{ margin:50px;}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #2E8BC0;
+   color:#fff;
+ }
+
+
+
