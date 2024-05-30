@@ -9,6 +9,11 @@ Description: This Template is created for web template
 
 /* ===================================== Import Less ================================== */
 @import 'variable';
+@import 'config/variables';
+@import 'base/base';
+@import 'layout/layout';
+@import 'components/header';
+@import 'components/breakpoints';
 /* ===================================== Basic CSS ================================== */
 
 * {
@@ -776,3 +781,5 @@ footer{
     @include big-padding();
     background-color: #FFF;
 }
+
+
