@@ -12,18 +12,23 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- ################# Header Starts Here#######################--->
 
-    <header>
-        <div class="header-top">
+   <!-- ################# Header Starts Here#######################--->
+      <!--=============== HEADER ===============-->
+      <header class="header">
+      
+      <div class="header-top">
             <div class="container">
                 <div class="row">
                    <div class="col-lg-7 col-md-12 left-item">  
-                  
+                     
                     </div>
                     <div class="col-lg-5 d-none d-lg-block right-item">
                         <ul>
@@ -39,62 +44,127 @@
 
             </div>
         </div>
-
-
-
-
-  <nav>
-        <ul class='nav-bar'>
-        
-        
      
-            <li class='logo'><a href='#'><img src='/home/dpr/Desktop/PFE/code/Logo-umbb-crsic.png'></a></li>
-            
-            <input type='checkbox' id='check' /> 
-            <span class="menu">
-                 
-                            <li><a href="#">Université</a>
-                                
-                <ul class="submenu">
-                    <li><a href="#">Présentation</a></li>
-                    <li><a href="#">BabyShark</a></li>
-                    <li><a href="#">highlander</a></li>
-                </ul>
-             
-                            </li>
-                            <li><a href="">Faculté</a>
-                            
-                                 <ul class="submenu">
-                    <li><a href="#">Présentation</a></li>
-                    <li><a href="#">BabyShark</a></li>
-                    <li><a href="#">highlander</a></li>
-                </ul>
-                           </li>
-                            <li><a href="">Formation</a></li>
-                            <li><a href="">Recherche</a></li>
-                            <li><a href="">Cooperation</a></li>
-                            
-                            <li> 
-                            
-                            <!--langue bouton-->
-                            
-                            <select class="selectlangue" data-width="fit">
+      
+        <nav class="nav container">
+            <div class="nav__data">
+               <a href="#" class="nav__logo">
+                  <img src='/home/dpr/Desktop/PFE/code/Logo-umbb-crsic.png'>  
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU    ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Home</a></li>
+
+                  <li><a href="#" class="nav__link">Company</a></li>
+
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-pie-chart-line"></i> Overview
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Transactions
+                           </a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="#" class="nav__link">Products</a></li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-user-line"></i> Profiles
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-lock-line"></i> Accounts
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-message-3-line"></i> Messages
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+<!-- changer de langue     <select class="selectlangue" >
                             
     <option value="FR">🇫🇷&emsp;</option>
     <option value="ar">🇩🇿&emsp;</option>
     <option value="En">🇬🇧&emsp;</option>
-                             </select>
-                             </li>
-     
-                            
-                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-            </span>
-            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-        </ul>
-    </nav>
+                             </select>  -->
 
 
-    </header>
+
+ 
+
+
+
+              </ul>
+
+
+
+            </div>
+          
+         </nav>
+      </header>
+
+                           
 
     <!--  ************************* Page Title Starts Here ************************** -->
     <div class="page-nav no-margin row">
