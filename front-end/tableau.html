@@ -12,18 +12,13 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-        
-</head>
-   
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
 <body>
     
     <!-- ################# Header Starts Here#######################--->
- <!-- ################# Header Starts Here#######################--->
       <!--=============== HEADER ===============-->
       <header class="header">
       
@@ -64,15 +59,15 @@
             <!--=============== NAV MENU    ===============-->
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li><a href="#" class="nav__link">Home</a></li>
+                  <li><a href="#" class="nav__link" data-i18n="home">Home</a></li>
 
-                  <li><a href="#" class="nav__link">Company</a></li>
+                  <li><a href="#" class="nav__link"  data-i18n="company" >Company</a></li>
 
                   <!--=============== DROPDOWN 1 ===============-->
                   <li class="dropdown__item">
-                     <div class="nav__link">
-                        Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                     </div>
+                     <div class="nav__link"> <div class="soulking" data-i18n="analytics">
+                        Analytics  </div>  <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
                      <ul class="dropdown__menu">
                         <li>
@@ -116,12 +111,14 @@
                      </ul>
                   </li>
                   
-                  <li><a href="#" class="nav__link">Products</a></li>
+                  <li><a href="#" class="nav__link"  data-i18n="products">Products</a></li>
 
                   <!--=============== DROPDOWN 2 ===============-->
                   <li class="dropdown__item">
-                     <div class="nav__link">
-                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     <div class="nav__link"> 
+                     <div class="soulking" data-i18n="users">
+                        Users  </div>
+                        <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                      </div>
 
                      <ul class="dropdown__menu">
@@ -144,6 +141,17 @@
                         </li>
                      </ul>
                   </li>
+                  <li><a href="#" class="nav__link" > 
+                  
+                  <select class="selectlangue" >
+                     
+                      <option value="fr" selected >🇫🇷&emsp; </option>
+                      <option value="ar">🇩🇿&emsp;</option>  
+                     
+                    
+   
+                             </select>
+                  </a></li>
 
 <!-- changer de langue     <select class="selectlangue" >
                             
@@ -168,18 +176,23 @@
       </header>
 
                            
-<div class="page-nav no-margin row">
-<div class="container">    
-<div class="row">
-            
-            
-             <h2>Coopération internationales</h2>
+
+                  <div class="page-nav no-margin row">
+        <div class="container">
+            <div class="row">
+                 <h2>Coopération internationales</h2>
+                <ul>
+                    <li> <a href="file:///home/dpr/Desktop/PFE/code/front-end/code/index.html"><i class="fas fa-home"></i> Acueil</a></li>
+                      <li><i class="fas fa-angle-double-right"></i> Coopération </li>
+                    <li><i class="fas fa-angle-double-right"></i> Coopération internationales</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+                
              
 
- </div>
- </div>   
- </div>
- 
+
 <div class="tableau">
 <table class="table table-striped">
   <thead>
@@ -190,41 +203,42 @@
       <th scope="col">Handle</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody >
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td  data-label="Number" >Mark</td>
+      <td  data-label="Number" >Otto</td>
+      <td  data-label="Number" >@mdo</td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td  data-label="Number" >Jacob</td>
+      <td  data-label="Number" >Thornton</td>
+      <td  data-label="Number" >@fat</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td  data-label="Number" >Larry</td>
+      <td  data-label="Number" >the Bird</td>
+      <td  data-label="Number" >@twitter</td>
     </tr>
      <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td  data-label="Number" >Mark</td>
+      <td  data-label="Number" >Otto</td>
+      <td  data-label="Number" >@mdo</td>
     </tr>
      <tr>
       <th scope="row">1</th>
-      <td>MarkKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</td>
-      <td>Ottokkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</td>
-      <td>@mdo</td>
+      <td  data-label="Number" >MarkKKKKKKKKKKKKKKKKKkkkKKKKKKKKKKkkkkkkkkkkkkkkkkkkkkkkkkkKKKKKKKKKK</td>
+      <td  data-label="Number" >Ottokkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</td>
+      <td  data-label="Number" >@mdo</td>
     </tr>
   </tbody>
 </table>
 
 </div>
+
 
 
 

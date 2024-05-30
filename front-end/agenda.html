@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <!--=============== REMIXICONS ===============-->
+       
+    <!--=============== REMIXICONS ===============-->
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 
 <body>
-
+    
     <!-- ################# Header Starts Here#######################--->
-   
-<!-- ################# Header Starts Here#######################--->
       <!--=============== HEADER ===============-->
       <header class="header">
       
@@ -61,15 +61,15 @@
             <!--=============== NAV MENU    ===============-->
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li><a href="#" class="nav__link">Home</a></li>
+                  <li><a href="#" class="nav__link" data-i18n="home">Home</a></li>
 
-                  <li><a href="#" class="nav__link">Company</a></li>
+                  <li><a href="#" class="nav__link"  data-i18n="company" >Company</a></li>
 
                   <!--=============== DROPDOWN 1 ===============-->
                   <li class="dropdown__item">
-                     <div class="nav__link">
-                        Analytics <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                     </div>
+                     <div class="nav__link"> <div class="soulking" data-i18n="analytics">
+                        Analytics  </div>  <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
                      <ul class="dropdown__menu">
                         <li>
@@ -113,12 +113,14 @@
                      </ul>
                   </li>
                   
-                  <li><a href="#" class="nav__link">Products</a></li>
+                  <li><a href="#" class="nav__link"  data-i18n="products">Products</a></li>
 
                   <!--=============== DROPDOWN 2 ===============-->
                   <li class="dropdown__item">
-                     <div class="nav__link">
-                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     <div class="nav__link"> 
+                     <div class="soulking" data-i18n="users">
+                        Users  </div>
+                        <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                      </div>
 
                      <ul class="dropdown__menu">
@@ -141,6 +143,17 @@
                         </li>
                      </ul>
                   </li>
+                  <li><a href="#" class="nav__link" > 
+                  
+                  <select class="selectlangue" >
+                     
+                      <option value="fr" selected >🇫🇷&emsp; </option>
+                      <option value="ar">🇩🇿&emsp;</option>  
+                     
+                    
+   
+                             </select>
+                  </a></li>
 
 <!-- changer de langue     <select class="selectlangue" >
                             
