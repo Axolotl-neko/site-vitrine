@@ -317,6 +317,7 @@ a {
 /* header top */
 
  header .header-top { 
+ direction: rtl;
     background-color:#2E8BC0; }
     header .header-top .left-item ul li {
       float: left;
@@ -612,6 +613,10 @@ a {
 
 /* ===================================== Slider Style CSS ================================== */
 
+.owl-carousel,
+.bx-wrapper { direction: ltr; }
+.owl-carousel .owl-item { direction: rtl; }
+
 .slider {
   position: relative;
  padding-top:5%;
@@ -818,14 +823,16 @@ font-size:0.8rem;
 
 
 }
-/* .selectlangue{ 
+ 
+.selectlangue{ 
 
-
-padding:20px;
 border: none !important;
+appearance: none;
+background-color:#fff;
+}
 
 
-}===================================== Actualité ================================== */
+/*==================================== Actualité ================================== */
 
 
 #actu{
@@ -833,16 +840,7 @@ border: none !important;
 padding-bottom:0px;
 }
 
-.selectlangue{ 
 
-background-color:#fff;
-
-border: none;
-padding: 5px 11px 3px 6px;
-width: 50px;
-color:#43597a;
-
-}
 
 .rayane{
 
@@ -1097,6 +1095,7 @@ padding:60px;
 
 .item2 {
     grid-column: 2 / 3; /* Spans from the start of the second column to the start of the third column */
+    
 }
          
          
@@ -1431,15 +1430,61 @@ footer {
       padding: 30px 10px; } }
 
 
-/* tableau styles */
+/* tableau styles  #B1D4E0; */
 
 .tableau{ margin:50px;}
-
+.table td,.table th{ border:none!important;}
 .table-striped>tbody>tr:nth-child(odd)>td, 
-.table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: #2E8BC0;
-   color:#fff;
+.table-striped>tbody>tr:nth-child(odd)>th{
+   background-color:#B1D4E0;
+   color:#000;
  }
+ thead{ border-top: 1px solid #ddd !important; }
+
+ @media (max-width:1000px){
+.table  thead{display:none}
+.table ,.table  tbody,.table  tr,
+.table  td{display:block;width:100%;}
+ .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        padding-left: 50%;
+        text-align: left;
+        position: relative;
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: auto;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .table th, .table td {
+        border: 1px solid #ddd !important;
+    }
+}
+ .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+.tableau {
+  margin: 50px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+ 
+
+ 
+ 
 
 
 
