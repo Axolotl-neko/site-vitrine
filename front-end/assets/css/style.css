@@ -317,7 +317,7 @@ a {
 /* header top */
 
  header .header-top { 
- direction: rtl;
+ direction: ltr;
     background-color:#2E8BC0; }
     header .header-top .left-item ul li {
       float: left;
@@ -1485,6 +1485,140 @@ footer {
 
  
  
+ 
+ /* ===================================== offre d'emploie ================================== */
+.our-instructor {
+   padding: 50px; 
+  background-color: #FFF; }
 
+
+
+  @media screen and (max-width: 940px) {
+    .our-instructor {
+      padding: 30px 10px; } }
+
+
+  .our-instructor .instruct-row {
+    margin-top: 30px; }
+    .our-instructor .instruct-row .instruct-card {
+
+         display: grid;
+    grid-template-rows: 12% 75% 13%; 
+      background-color: #f4f4f4;
+      padding: 15px;
+      margin-bottom: 15px;
+      text-align: center; 
+      height: 95%;
+
+
+
+    }
+      .our-instructor .instruct-row .instruct-card img {
+         grid-row: 2; 
+        max-width: 120px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .our-instructor .instruct-row .instruct-card h6 {
+        margin-bottom: 0px; }
+      .picpost{ grid-row: 2; }
+      .fac { grid-row: 1; }
+        
+      .our-instructor .instruct-row .instruct-card p {
+        font-size: .83rem; margin-bottom:10px; }
+      .our-instructor .instruct-row .instruct-card .conditions {
+        border: none;
+       
+        align-self: start;
+        width: 100%;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 2px;
+         }
+        .closebutton ,.our-instructor .instruct-row .instruct-card .conditions{
+        
+         /* background-color: #43cb89;*/
+          background-color: #2E8BC0;
+          padding: 5px;
+          text-align: center;
+          color: #FFF;
+          cursor: pointer; 
+           grid-row: 3;
+           margin-top:7px; }
+
+           .closebutton { width:30%;
+                           border-radius:10px;
+                           border: none;
+                           margin-bottom: 2%;
+
+
+            }
+
+           .closebutton:hover ,.our-instructor .instruct-row .instruct-card .conditions:hover{ background-color: #43cb89;}
+
+
+          .conditionpopup{
+          
+          background-color: #fff;
+          max-height:500px;
+          height: 100%;
+          max-width:1000px;
+          width:auto;
+          height: auto;
+          border-radius: 24px;
+          position: fixed;
+          left:50%;
+          top:50%;
+          transform: translate(-50%,-50%);
+          z-index: 10000;
+         display: none;
+          
+
+          }
+
+
+         .conditionpopup h2{
+            
+            color:#2E8BC0;
+          }
+
+
+          .active .conditionpopup{
+            display: block;
+            color:#2E8BC0;
+          }
+
+          .overlay{
+           
+          position:fixed;
+          top:0;
+          bottom:0;
+          left: 0;
+          right:0;
+          height: 100%;
+          width: 100%;
+          background:rgba(0, 0, 0, 0.4) ;
+          z-index: 9999;
+          display: none;
+
+
+          }
+         
+
+          .conditionpopup i{ font-size:3rem;  padding-top:2%; color:#2E8BC0; }
+
+         .active .overlay{
+            display: block;
+          }
+          #popuptitle{ 
+          
+          padding:1%;
+
+           }
+          .conditionpopup ul {  text-align:left;
+                       padding:15%;
+                       padding-bottom:5%;
+                       padding-top:2%;
+                        color:#000;
+                       }
 
 
