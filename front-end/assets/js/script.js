@@ -165,8 +165,22 @@ if(langue==='ar'){ document.dir = "rtl"}else{document.dir = "ltr"}
 
 
 
+const buttons = document.querySelectorAll(".conditions");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const section = button.closest(".popup");
+    section.classList.add("active");
+  });
+});
 
 
 
+document.querySelectorAll(".closebutton").forEach(button => {
+  button.addEventListener("click", () => {
+    const section = button.closest(".popup");
+    section.classList.remove("active");
+  });
+});
 
 
