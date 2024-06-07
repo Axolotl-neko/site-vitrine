@@ -181,3 +181,10 @@ document.querySelectorAll(".closebutton").forEach(button => {
       this.classList.toggle('inactive');
     });
   });
+
+
+/////////////////////////////buton ajouter /////////////////////////////////////////
+
+    document.getElementById('grey').addEventListener('click', function() {
+        window.location.href = 'file:///home/rayane/Bureau/site-vitrine-main/adminspace/now-ui-dashboard-master/examples/Actualité.html';
+    });
