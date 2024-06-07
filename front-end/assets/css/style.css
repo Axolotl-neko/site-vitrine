@@ -14,6 +14,9 @@
   padding: 0px;
   list-style: none; }
 
+.logo img {
+  max-width: 30%; }
+
 img {
   max-width: 100%; }
 
@@ -133,7 +136,7 @@ body {
     margin: auto; }
   @media screen and (max-width: 576px) {
     .page-nav {
-      padding-top: 186px; } }
+      padding-top: 20%; } }
   @media screen and (max-width: 356px) {
     .page-nav {
       padding-top: 206px; } }
@@ -1028,6 +1031,7 @@ padding:12px 30px 30px 30px ;
   .vbf {
     padding: 0px; } }
 
+
 .blog-card {
   display: flex;
   margin: auto;
@@ -1062,6 +1066,81 @@ padding:12px 30px 30px 30px ;
         font-size: 1rem; }
       .blog-card .setv ul li {
         font-size: 0.8rem; } }
+
+
+
+/*===================================Annuaire=====================================*/    
+
+ .Annuaire-card {
+  display: flex;
+  margin: auto;
+  background-color: #FFF;
+/*#fffb7a*/
+  padding: 15px 0px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 700px) {
+     .Annuaire-card.col-2 {
+      padding-right: 0px;
+      padding-left: 7px; } 
+ 
+  .Annuaire-card {
+
+  background-color: #fffb7a;
+  color: #000;
+/*#fffb7a*/}
+
+
+    }
+   .Annuaire-card .phone-box {
+    border: 1px solid #43cb89;
+    color:#2E8BC0;
+    padding: 10px;
+    padding-top:20% ;
+    text-align: center; 
+     width: 100%;
+     height:100%;}
+     .Annuaire-card .phone-box {
+      font-size: 34px; }
+      @media screen and (max-width: 700px) {
+        .phone-box   {
+          font-size: 1rem; 
+         display: none;
+
+        } 
+
+  .Annuaire-card .img-phone img {
+    display: none;
+ 
+      }
+      }
+   .Annuaire-card .img-cv {
+    text-align: center;
+    margin: auto; }
+    .Annuaire-card .img-phone img {
+      width: 150px; 
+ 
+      }
+   .Annuaire-card .setv {
+    margin: auto; }
+    @media screen and (max-width: 500px) {
+       .Annuaire-card .setv h4 {
+        font-size: 1rem; }
+       .Annuaire-card.setv ul li {
+        font-size: 0.8rem; } }
+
+
+        .inline-list {
+    list-style-type: none; /* Optional: remove bullets */
+    padding: 0; /* Optional: remove padding */
+    margin: 0; /* Optional: remove margin */
+}
+
+.inline-list li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed for spacing */
+}
 /* ===================================== News letter  ================================== */
 
 
@@ -1436,8 +1515,8 @@ footer {
 .table td,.table th{ border:none!important;}
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th{
-   background-color:#B1D4E0;
-   color:#000;
+   background-color:#2E8BC0;
+   color:#FFF;
  }
  thead{ border-top: 1px solid #ddd !important; }
 
