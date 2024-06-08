@@ -1701,3 +1701,198 @@ footer {
                        }
 
 
+
+ /* ===================================== Bourse ================================== */
+
+/* Your existing CSS */
+         .our-instructor {
+            padding: 50px;
+            background-color: #FFF;
+        }
+
+        @media screen and (max-width: 940px) {
+            .our-instructor {
+                padding: 30px 10px;
+            }
+        }
+
+        .our-instructor .instruct-row {
+            margin-top: 30px;
+        }
+
+        .bourse-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            width: 250px; /* Fixed width */
+            height: 350px; /* Fixed height */
+        }
+
+        .bourseimg {
+            width: 100%;
+            height: 50%; /* Ensures the image takes up 60% of the card's height */
+            object-fit: cover;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .bourse-card h6 {
+            margin-bottom: 0px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            height: 20%; /* Ensures the title takes up 20% of the card's height */
+        }
+
+        .picpostbourse {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .picpostbourse p {
+            color: red;
+            font-size: .83rem;
+            margin-bottom: 10px;
+            height: 10%; /* Ensures the date takes up 10% of the card's height */
+        }
+
+        .popup2 {
+            display: block;
+        }
+
+        .our-instructor .instruct-row .bourse-card .conditions2 {
+            border: none;
+            align-self: end;
+            width: 100%;
+            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+            border-radius: 2px;
+        }
+
+        .closebutton2, .our-instructor .instruct-row .bourse-card .conditions2 {
+            background-color: #2E8BC0;
+            padding: 5px;
+            text-align: center;
+            color: #FFF;
+            cursor: pointer;
+            margin-top: 7px;
+        }
+
+        .closebutton2 {
+            width: 30%;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 2%;
+        }
+
+        .closebutton2:hover, .our-instructor .instruct-row .bourse-card .conditions2:hover {
+            background-color: #43cb89;
+        }
+
+        .conditionpopup2 {
+            background-color: #fff;
+            max-height: 500px;
+            height: 100%;
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10000;
+            display: none;
+        }
+
+        .conditionpopup2 h2 {
+            color: #2E8BC0;
+        }
+
+        .active .conditionpopup2 {
+            display: block;
+            color: #2E8BC0;
+        }
+
+        .overlay2 {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 9999;
+            display: none;
+        }
+
+        .conditionpopup2 i {
+            font-size: 3rem;
+            padding-top: 2%;
+            color: #2E8BC0;
+        }
+
+        .active .overlay2 {
+            display: block;
+        }
+
+        #popuptitle2 {
+            padding: 1%;
+        }
+
+        .conditionpopup2 ul {
+            text-align: left;
+            padding: 15%;
+            padding-bottom: 5%;
+            padding-top: 2%;
+            color: #000;
+        }
+
+
+
+        /* Slider CSS */
+        .slider-containerR {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sliderR {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-cardR {
+            min-width: 250px;
+            margin: 0 10px;
+        }
+
+        .slider-buttonR {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #2E8BC0;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .slider-buttonR.left {
+            left: 10px;
+        }
+
+        .slider-buttonR.right {
+            right: 10px;
+        }
+
