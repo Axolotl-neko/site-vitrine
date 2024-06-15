@@ -39,6 +39,30 @@ $( document ).ready(function() {
             }
         }
     })
+
+
+     $('#slider3').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay: true,
+        dots: true,
+        autoplayTimeout: 5000,
+        navText:['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+
+
       $('#slider2').owlCarousel({
         loop:true,
         margin:0,
@@ -62,6 +86,7 @@ $( document ).ready(function() {
 
 
 });
+
 
 
 
@@ -164,6 +189,7 @@ if(langue==='ar'){ document.dir = "rtl"}else{document.dir = "ltr"}
 };
 
 
+///////////////////////// buttons bourse et emploie ///////////////////////
 
 const buttons = document.querySelectorAll(".conditions");
 
@@ -174,13 +200,51 @@ buttons.forEach(button => {
   });
 });
 
-
-
 document.querySelectorAll(".closebutton").forEach(button => {
   button.addEventListener("click", () => {
-    const section = button.closest(".popup");
-    section.classList.remove("active");
+    const section4 = button.closest(".popup");
+    section4.classList.remove("active");
   });
 });
 
 
+
+ 
+            // Popup functionality
+            const buttonZ = document.querySelectorAll(".conditions2");
+            buttonZ.forEach(buttoni => {
+                buttoni.addEventListener("click", () => {
+                    const section2 = buttoni.closest(".popup2");
+                    section2.classList.add("active");
+                });
+            });
+
+            document.querySelectorAll(".closebutton2").forEach(button => {
+                button.addEventListener("click", () => {
+                    const section3 = button.closest(".popup2");
+                    section3.classList.remove("active");
+                });
+            });
+
+            document.querySelectorAll(".overlay2").forEach(overlay => {
+                overlay.addEventListener("click", () => {
+                    const section3 = overlay.closest(".popup2");
+                    section3.classList.remove("active");
+                });
+            });
+    
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+        const h2Elements = document.querySelectorAll('.second_h2');
+
+        h2Elements.forEach(h2 => {
+            h2.addEventListener('click', function() {
+                const nextChangeText = this.nextElementSibling;
+                
+                if (nextChangeText && nextChangeText.classList.contains('change_text')) {
+                    nextChangeText.classList.toggle('show');
+                }
+            });
+        });
+    });
